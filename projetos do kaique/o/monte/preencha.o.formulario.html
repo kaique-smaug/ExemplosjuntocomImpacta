@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Faça sua Consulta</h1>
+
+
+
+        <form action="#" method="post">
+
+
+            <p class="form-group">
+                <label>Nome:</label>
+                <input class="form-control" type="text" name="Nome" placeholder="Nome e sobre nome" required="required"
+                    maxlength="20">
+            </p>
+            <p>
+                <label for="Kilogramas">Peso(kg)</label>
+                <input type="number" id="Kilogramas" placeholder="kg" required="required">
+            </p>
+
+            <p>
+                <label class="form-group" for="Data">Data de nascimento:</label>
+                <input class="form-control" type="date" name="Data" id="Data" required="required">
+            </p>
+
+            <p>
+                <label class="form-group" for="Telefone">Telefone:</label>
+                <input class="form-control" type="tel" name="Telefone" id="Telefone" placeholder="(11)2345-3992" required>
+            </p>
+
+
+
+            <p>
+                <label class="form-group" for="email">E-mail</label>
+
+                <input class="form-control" type="email" name="email" id="email" placeholder="Informe seu E-mail" required="required">
+            </p>
+
+        </form>
+
+        <button type="submit">Enviar</button>
+
+
+
+        <script src="../js/formulario.js"></script>
+
+    </div>
+</body>
+
+</html>

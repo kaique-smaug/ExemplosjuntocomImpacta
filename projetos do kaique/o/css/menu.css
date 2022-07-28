@@ -1,0 +1,49 @@
+.menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: blue;
+    /* height: 90px; */
+    overflow: hidden;
+}
+
+.menu li {
+    float: left;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    padding: 14px 16px;
+    display: block;
+}
+
+.menu a:hover {
+    background-color: white;
+    color: blue;
+}
+
+Enconder o item que tem o ícone .menu li.icone {
+    display: none;
+}
+
+@media screen and (max-width:780px) {
+    /* Escondemos os itens do menu */
+     .menu li {
+        display: none;
+    }
+
+    /* Exibimos novamente os item/ícone do menu */
+     .menu li.icone {
+        display: block;
+        float: right;
+
+    }
+    .menu.aberto li {
+        float: none;
+        display: inline
+    }
+    menu.aberto {
+        position: relative;
+    }
+};

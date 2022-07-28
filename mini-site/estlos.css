@@ -1,0 +1,159 @@
+/* O que faremos aqui dentro do arquivo estilos.cs, é somente "regras CSS" */
+/* Regra usando seletor universal 
+    Aqui alteramos o comportamento do Box Model*/
+    * { box-sizing: border-box; }
+
+
+body {
+    /* Background-color: lightblue; */
+
+    background-image: url(imagens/noite.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    
+    background-color: rgb(0, 255, 204);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+hr {
+ background-color: black;
+ height: 15px;
+}
+h1 {
+   animation-name: cair;
+   animation-duration: 3s;
+   /* animation-iteration-count: infinite ; */
+   
+   text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: black;
+    color: white;
+    border-radius:180px;
+    padding: 3px;
+    /* com as propriedades abaixo, é possível manter o fixo ao rolar a página para baixo */
+    position: sticky ;
+    top: 0;
+    /* Com a propriedade abaixo, é  possivel */
+    z-index: 100;
+    /* width: 200px; */
+    /* margin: auto ; */
+}
+
+h2 {
+/* Tipos de bordas:border:
+solid, double, datted, dashed */
+border: double black;
+padding-left:20px;
+font-family: 'Courier New', Courier, monospace;
+
+}
+/*  tornando as imagens flexíveis */
+img {  max-width: 100%;}
+
+h3 {
+   font-family: 'Courier New', Courier, monospace;
+}
+
+
+
+/* Seletor "classe" */
+ .centralizar { text-align: center; }
+ /* seletor "identificado */
+ #container {
+    width: 80%; 
+    margin: auto;
+    /* background-color:  antiquewhite; */
+    /* cor dantânciaX distânciaY suavilização*/
+    background-image: linear-gradient( 50deg,white,blue );
+    /* to left para direita */
+    box-shadow: black 2x 2x 10x;
+    border: solid 3px;
+
+ }
+
+ .destaque { background-color: yellow; }
+ .sombrinha-texto { text-shadow: black 2px 2px 10px; }
+ .sombrinha-bloco { box-shadow: white 3px 3px 3px; }
+
+ /*  Regras para os links no menu */
+
+ /*  Estado inicial dos links */
+ nav a {
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    /*negrito   */
+    font-weight: bold;    
+    padding: 10px;
+    width: 50%;
+    border: solid 5px;
+    display: inline-block; 
+    transition: 3s; 
+    
+
+    /* box-sizing: border-box; */
+    
+ }
+
+ /* estado de acionamneto do link */
+ nav a:hover {
+    background-color: blue;
+    color: yellow;
+ }
+
+ figure img:hover {
+    filter: grayscale(100%);
+    transition: 3s;
+    
+ }
+
+
+
+ /* Animações do css */
+
+
+  /* from { color: blue; }
+   to {color: red; }
+ }
+
+  
+
+ /* sintaxe para mais de dois estados */
+
+
+ 
+
+ /* 1) Regra de animação
+ 2) Aplicação da animação em algum elemento */
+
+ /* 1) Regra de Animação */
+@keyframes cores {
+   /* Sintaxe apenas para dois estados */
+   /* from { color: blue; }
+   to { color: red; } */
+
+   /* Sintaxe para mais de dois estados */
+   0% { color: red; }
+   25% { color: green; }
+   50% { color: blue; }
+   75% { color: purple; }
+   100% { color: orange; }
+}
+
+ h4 {
+   animation-name: cores;
+   animation-duration: 3s;
+   /* animation-iteration-count:infinite ; */
+ }
+
+ @keyframes cair {
+   from { 
+      opacity: 0 ; 
+      transform: translateY(-150px) rotateX(400deg);
+   
+   }
+   to {  
+      opacity: 1 ;
+
+   }
+ }

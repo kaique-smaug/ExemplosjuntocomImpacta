@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <titl>Dasktop-First</titl>
+    <style>
+        /* Regras de uso geral */
+        * { box-sizing: border-box; }
+        body {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            background-color: cadetblue;
+        }
+        h1 {
+            color: blue;
+            text-align: center;
+            font-size: 45px;
+        }
+        h2 { text-align: center; }
+        /* 2) Regra de uso condicional */
+
+        @media screen and (max-width: 682px) {
+            h1 { max-width: 490;}
+            h2 { text-align: left; }
+            body { background-color: chartreuse; }
+        }  
+        @media screen and ( max-width: 470px) {
+            h1 { font-size: 30px; }
+            h2 { font-size: 20px; }
+            hr { display: none; }
+            p {text-align: center; }
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>Desktop-First</h1>
+    <hr>
+    <h2>Definição</h2>
+    <p>Fluxo de desenvolvimento responsivo pensado inicialmente para telas grandes (computador, notebook, tv etc).</p>
+    <p>Em resumo: <b>vai da tela grande para a tela pequena.</b></p>
+    
+</body>
+</html>

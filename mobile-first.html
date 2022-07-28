@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile First</title>
+    <style>
+        /* 1) Regra de uso geral*/
+        * { box-sizing: border-box; }
+        body {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            background-color: lightblue;
+        }
+        h1 {
+            text-align: center;
+            color: blue;
+        }
+        h2 {
+            border-left: solid 10px darkblue;
+        }
+        p { font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
+
+
+
+
+        /* 2) Regras de uso condicional */
+
+        @media screen and ( min-width: 574px) {
+            body { background-color: yellow; }
+            h1 {font-size: 45px; }
+    }
+    @media screen and ( min-width: 679px) {
+         hr { display: none; }
+         h2 {
+            text-align: center;
+            border: none;
+        }
+         p {
+            font-size: 20px;
+            padding: 10px;
+
+         } 
+        
+    }  
+        
+
+    </style>
+</head>
+<body>
+    <h1>Mobile First</h1>
+    <hr>
+    <h2>Definição</h2>
+    <p>Fluxo de desenvolvimento responsivo pensado inicialmente para telas pequenas (dispositivos móveis).</p>
+    <p>Em resumo <b>vai da tela pequena para grande</b></p>
+
+    
+</body>
+</html>
